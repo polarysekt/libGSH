@@ -167,7 +167,7 @@ int main( int argc, char* argv[] ) {
 
 #### A simple Window
 
-```
+```c
 /** window.c
  * @file Simple GUI Window Demo
  * @author polarysekt
