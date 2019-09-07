@@ -1,0 +1,23 @@
+CHANGELOG
+=========
+2019.09.07-polarysekt
+
+# CHANGELOG
+
+## 0.2.0.0
+
+### General
+
+* Update versioning `major.minor.revision.release`
+* Update license to NCSA
+
+### Features
+
+* Add more versioning API:
+* * `const char* ghVersionGetArchitecture()`
+* * `const char* ghVersionGetBuildType()`
+* * `const char* ghVersionGetPlatform()`
+
+### Fixes
+
+* Fully implement `ghVersionGetBuild()` to return count branded by build system
