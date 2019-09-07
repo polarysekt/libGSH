@@ -165,7 +165,7 @@ int main( int argc, char* argv[] ) {
     
 ```
 
-#### A simple Window`
+#### A simple Window
 
 ```
 /** window.c
