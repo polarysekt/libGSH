@@ -89,6 +89,30 @@ TODO
 
 ### More Examples
 
+Examples are located in the `example/` folder. 
+
+A makefile is included, with variables for architecture/platform specifics.
+
+The `all` target can be used to build all the examples:
+
+```sh
+$ make all
+```
+
+The examples can built individually by specifying the file (without the `.c` extension ):
+NOTE: the output folder must exist, or this will fail.
+
+```sh
+$ make bin/version
+```
+
+Or without an output path:
+NOTE: `make clean` will not find these targets
+
+```sh
+$ make version
+```
+
 #### libGH version information
 
 ```c
@@ -229,7 +253,7 @@ int main( int argc, char* argv[] ) {
     // Run main message loop
 	ret = ghRun();
 
-    // This will soon be handled internally, automatically
+    // This is automatically handled internally, but can be called explicitly
 	ghWindowDestroy( wndMain );
 
 	return ret;
