@@ -4,6 +4,17 @@ CHANGELOG
 
 # CHANGELOG
 
+## 0.2.0.1
+
+### General
+
+* Added examples and example makefile
+
+### Features
+
+* Implemented window tracking into runnable - will destroy on exit
+* Moved some API internally
+
 ## 0.2.0.0
 
 ### General
