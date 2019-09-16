@@ -2,7 +2,8 @@
 # NOTE: much of this manual configuration will be performed by `pkg-config` in the future
 # 2019.09.11, polarysekt
 
-ghCC= cc
+#ghCC= cc
+ghCC= gcc
 ghMKDIR= mkdir -p
 ghI= -I
 ghL= -L
@@ -10,17 +11,22 @@ ghSTATICEXT= .a
 #ghSTATICEXT= .lib
 
 ## TODO:
-ghEXECEXT=
-#ghEXECEXT= .exe
+#ghEXECEXT=
+ghEXECEXT= .exe
+
+#ghDEBUGGING= -debugv
+ghDEBUGGING=
 
 ghVERSION= 0.2.0.1
 
-ghARCH= x86_64
+#ghARCH= x86_64
+ghARCH= Intel64
 #ghARCH= armv7l
-ghPLATFORM= X
-#ghPLATFORM= MSWIN
+#ghPLATFORM= X
+ghPLATFORM= MSWIN
 
-ghPLATFORMLIBS= -lX11
+#ghPLATFORMLIBS= -lX11
+#ghPLATFORMLIBS= -luser
 
 ghINCPATH= $(ghI)../$(ghVERSION)/
 ghLIBPATH= $(ghL)../$(ghVERSION)/
@@ -29,7 +35,7 @@ ghLIBPATH= $(ghL)../$(ghVERSION)/
 ghTARGETPATH= bin/
 
 #TODO -- fix ghLIBPATH
-ghLIBGH=../$(ghVERSION)/libGH-$(ghVERSION)-$(ghARCH)-$(ghPLATFORM)$(ghSTATICEXT)
+ghLIBGH=../$(ghVERSION)/libGH$(ghDEBUGGING)-$(ghVERSION)-$(ghARCH)-$(ghPLATFORM)$(ghSTATICEXT)
 
 
 .PHONY: all
