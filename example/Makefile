@@ -11,21 +11,21 @@ ghSTATICEXT= .a
 #ghSTATICEXT= .lib
 
 ## TODO:
-#ghEXECEXT=
-ghEXECEXT= .exe
+ghEXECEXT=
+#ghEXECEXT= .exe
 
 #ghDEBUGGING= -debugv
 ghDEBUGGING=
 
 ghVERSION= 0.2.0.1
 
-#ghARCH= x86_64
-ghARCH= Intel64
+ghARCH= x86_64
+#ghARCH= Intel64
 #ghARCH= armv7l
-#ghPLATFORM= X
-ghPLATFORM= MSWIN
+ghPLATFORM= X
+#ghPLATFORM= MSWIN
 
-#ghPLATFORMLIBS= -lX11
+ghPLATFORMLIBS= -lX11
 #ghPLATFORMLIBS= -luser
 
 ghINCPATH= $(ghI)../$(ghVERSION)/
