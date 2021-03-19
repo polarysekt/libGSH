@@ -1,6 +1,6 @@
 # example Makefile
 # NOTE: much of this manual configuration will be performed by `pkg-config` in the future
-# 2019.09.11, polarysekt
+# 2021.03.18::gsh
 
 #ghCC= cc
 ghCC= gcc
@@ -17,7 +17,7 @@ ghEXECEXT=
 #ghDEBUGGING= -debugv
 ghDEBUGGING=
 
-ghVERSION= 0.2.0.1
+ghVERSION= 0.7.0.1
 
 ghARCH= x86_64
 #ghARCH= Intel64
@@ -28,15 +28,17 @@ ghPLATFORM= X
 ghPLATFORMLIBS= -lX11
 #ghPLATFORMLIBS= -luser
 
-ghINCPATH= $(ghI)../$(ghVERSION)/
-ghLIBPATH= $(ghL)../$(ghVERSION)/
+#$(ghVERSION)/include/
+ghINCPATH= $(ghI)../include
+#$(ghVERSION)/lib/
+ghLIBPATH= $(ghL)../lib
 
 # be very careful with this, especially if running clean command!!!
 ghTARGETPATH= bin/
 
 #TODO -- fix ghLIBPATH
-ghLIBGH=../$(ghVERSION)/libGH$(ghDEBUGGING)-$(ghVERSION)-$(ghARCH)-$(ghPLATFORM)$(ghSTATICEXT)
-
+#../lib/libGH$(ghDEBUGGING)-$(ghVERSION)-$(ghARCH)-$(ghPLATFORM)$(ghSTATICEXT)
+ghLIBGH= ../lib/libGH.a
 
 .PHONY: all
 

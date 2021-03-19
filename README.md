@@ -1,7 +1,6 @@
 libGH Distribution README
 =========================
-2019.09.11-polarysekt
-
+2021.03.18::gsh
 
 # libGH Distribution
 
@@ -16,6 +15,22 @@ libGH distribution builds with `C` bindings.
 The libs are built as static libraries into the version folders.
 
 The include header for each version is included.
+
+### Building
+
+The distribution now contains a convenient Makefile in the project root.
+
+``` sh
+make all
+```
+
+Example files will be built into `example/bin/`.
+
+## Folders
+
+* `include/` : soft link to current include
+* `lib/` : soft link to current lib
+* `example/` : includes examples that can be built using Makefile
 
 ### Using the library
 

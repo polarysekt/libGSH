@@ -1,10 +1,10 @@
 /* -*- mode: C; tab-width: 2; indent-tabs-mode: t; c-basic-offset: 2 -*- */
 /** GH.h
- * the YOLOSTRAT ^ruddy^ *OFFICIAL* master include file
+ * @file the YOLOSTRAT ^ruddy^ *OFFICIAL* master include file
  *
- * Update for 0.2.0.0
- *
- * Copyright (c) 2012-2017,2019 polarysekt, kb3c
+ * @since 0.0.0.0
+ * 
+ * @copyright Copyright (c) 2012-2017,2019,2021 polarysekt, kb3c
  */
 
 // stdlib headers [required for now] ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -258,14 +258,6 @@ ghRUNNABLE*	ghInit( int* pargc, char*** pargv );
 ghRET		ghRun( void );
 void		ghShutdown( );
 
-ghRUNNABLE*	ghRunnableCreate( void );
-ghRET				ghRunnableDestroy( ghRUNNABLE* pr );
-void				ghRunnableDestroyDefault( void );
-ghRUNNABLE*	ghRunnableGetDefault( void );
-ghRUNNABLE*	ghRunnableInit( ghRUNNABLE* pr, int* pargc, char*** pargv );
-void				ghRunnableSetDefault( ghRUNNABLE *pr );
-ghRUNNABLE*	ghRunnableShutdown( ghRUNNABLE* pr );
-void				ghRunnableShutdownDefault( void );
 
 /*** libgh RECT **************************************************************
                                                                              */
